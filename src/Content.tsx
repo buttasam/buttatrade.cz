@@ -7,10 +7,16 @@ import {
 } from "@heroicons/react/24/solid";
 
 const HeroSection: React.FC = () => (
-  <section className="max-w-7xl mx-auto px-4 py-8">
-    <div className="flex justify-center items-center text-2xl h-32 text-center font-semibold text-blue max-w-2xl mx-auto">
-      BEZPEČNOSTNÍ PRODUKTY A SLUŽBY
-      <br /> PRO ZÍSKÁNÍ A OCHRANU INFORMACÍ
+  <section className="w-full mx-auto md:py-4">
+    <div className="relative bg-[url('/background.jpg')] bg-cover bg-center h-48">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gray-800/60"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex justify-center items-center text-3xl text-center font-semibold text-white h-full max-w-2xl mx-auto">
+        BEZPEČNOSTNÍ PRODUKTY A SLUŽBY
+        <br /> PRO ZÍSKÁNÍ A OCHRANU INFORMACÍ
+      </div>
     </div>
   </section>
 );
@@ -424,12 +430,16 @@ const ProjectsSection: React.FC = () => (
 const Content: React.FC = () => {
   return (
     <>
-      <div className="md:mt-16 md:px-10">
-        <HeroSection />
-        <ContactsSection />
-        <BankDetails />
-        <PartnersSection />
-        <ProjectsSection />
+      <div className="md:mt-16">
+        <div className="px-0">
+          <HeroSection />
+        </div>
+        <div className="md:px-10">
+          <ContactsSection />
+          <BankDetails />
+          <PartnersSection />
+          <ProjectsSection />
+        </div>
       </div>
     </>
   );
