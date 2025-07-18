@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`bg-white border-b-1 border-gray-300  md:fixed top-0 right-0 left-0 md:transition-all md:duration-300 ${
+      className={`bg-white border-b-1 border-gray-300 z-10 md:fixed top-0 right-0 left-0 md:transition-all md:duration-300 ${
         scrolled ? "md:py-0" : "py-4"
       }`}
     >

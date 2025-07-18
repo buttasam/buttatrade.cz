@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => (
       <div className="absolute inset-0 bg-gray-800/60"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex justify-center items-center text-3xl text-center font-semibold text-white h-full max-w-2xl mx-auto">
+      <div className="relative flex justify-center items-center text-2xl md:text-3xl text-center font-semibold text-white h-full max-w-2xl mx-auto">
         BEZPEČNOSTNÍ PRODUKTY A SLUŽBY
         <br /> PRO ZÍSKÁNÍ A OCHRANU INFORMACÍ
       </div>
