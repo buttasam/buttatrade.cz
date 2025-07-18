@@ -1,4 +1,5 @@
 import {
+  ArrowTopRightOnSquareIcon,
   ChevronRightIcon,
   EnvelopeIcon,
   PhoneIcon,
@@ -22,10 +23,16 @@ const ContactsSection: React.FC = () => (
       <div className="md:w-1/2 space-y-3">
         <ul className="space-y-2">
           <li className="flex items-center gap-2">
-            <PhoneIcon className="h-4" /> +420 <strong>730 844 366</strong>
+            <PhoneIcon className="h-4" />
+            <a href="tel:+420730844366">
+              +420 <strong>730 844 366</strong>
+            </a>
           </li>
           <li className="flex items-center gap-2">
-            <PhoneIcon className="h-4" /> +420 <strong>739 821 829</strong>
+            <PhoneIcon className="h-4" />
+            <a href="tel:+420739821829">
+              +420 <strong>739 821 829</strong>
+            </a>
           </li>
           <li className="flex items-center gap-2">
             <EnvelopeIcon className="h-4" />
@@ -67,14 +74,21 @@ const ContactsSection: React.FC = () => (
           </li>
           <li>
             <strong>Adresa:</strong>
-            <div className="flex items-center">
-              <ChevronRightIcon className="h-4" />
-              Pod Turnovskou tratí 170/3
-            </div>
-            <div className="flex items-center">
-              <ChevronRightIcon className="h-4" />
-              198 00 Praha 9 Hloubětín
-            </div>
+            <a
+              href="https://maps.app.goo.gl/UrNNtV2cQqNy5KQr5"
+              target="_blank"
+              className="hover:underline"
+            >
+              <div className="flex items-center">
+                <ChevronRightIcon className="h-4" />
+                Pod Turnovskou tratí 170/3
+              </div>
+              <div className="flex items-center">
+                <ChevronRightIcon className="h-4" />
+                198 00 Praha 9 Hloubětín
+                <ArrowTopRightOnSquareIcon className="h-4 ml-1" />
+              </div>
+            </a>
           </li>
         </ul>
       </div>
